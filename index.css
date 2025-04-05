@@ -20,3 +20,7 @@ header {
     cursor: pointer;
     transition: transform 0.5s ease-in-out;
 }
+
+#wallet:hover {
+    transform: scale(1.1);
+}
