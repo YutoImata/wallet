@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>？？？？？</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1 id="hiddenTitle">？？？？？</h1>
+    </header>
+
+    <main>
+        <!-- 第一段階：最初の謎解き -->
+        <div class="puzzle-container">
+            <p>ヒント: この言葉を完成させよう！</p>
+            <input type="text" id="answerInput" placeholder="答えを入力">
+            <button onclick="checkAnswer()">送信</button>
+            <p id="resultMessage"></p>
+        </div>
+
+        <!-- 第二段階：財布が出現 -->
+        <div class="wallet-container" id="walletSection" style="display: none;">
+            <p>この中に何かが…？</p>
+            <img src="wallet_closed.png" alt="財布" id="wallet" onclick="openWallet()">
+        </div>
+
+        <!-- 第三段階：財布の謎解き -->
+        <div class="second-puzzle" id="secondPuzzle" style="display: none;">
+            <p>ヒント: 「お金を入れるもの」これは何？</p>
+            <input type="text" id="walletAnswer" placeholder="答えを入力">
+            <button onclick="checkWalletAnswer()">送信</button>
+            <p id="walletResultMessage"></p>
+        </div>
+
+        <!-- 最終ステップ：財布の中身が見える -->
+        <div class="wallet-content" id="walletContent" style="display: none;">
+            <p>おめでとう！財布の中には…</p>
+            <img src="wallet_open.png" alt="開いた財布">
+            <p>中にはお金が入っていた！</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 タイトルを探せ！</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

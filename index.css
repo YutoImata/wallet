@@ -1,0 +1,22 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+header {
+    background: linear-gradient(135deg, #ff6f61, #d23f31);
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.puzzle-container, .wallet-container, .second-puzzle, .wallet-content {
+    margin-top: 50px;
+}
+
+#wallet {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
